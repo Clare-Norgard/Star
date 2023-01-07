@@ -11,7 +11,8 @@ import streamlit as st
 import statsmodels.api as sm
 import plotly.graph_objects as go
 
-
+from google.colab import files
+uploaded = files.upload()
 drink_dataframe = pd.read_csv(io.BytesIO(uploaded['starbucks_drinks.csv']))
 
 Pastel1 = px.colors.qualitative.Pastel1
