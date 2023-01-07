@@ -11,6 +11,8 @@ import streamlit as st
 import statsmodels.api as sm
 import plotly.graph_objects as go
 
+DATA_URL= "starbucks_drinks.py"
+
 from google.colab import files
 uploaded = files.upload()
 drink_dataframe = pd.read_csv(io.BytesIO(uploaded['starbucks_drinks.csv']))
